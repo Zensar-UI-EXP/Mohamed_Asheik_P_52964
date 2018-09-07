@@ -1,0 +1,1 @@
+No setup is required for an app. Please open index.html directly into a browser.

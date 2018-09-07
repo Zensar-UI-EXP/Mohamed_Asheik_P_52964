@@ -19,32 +19,32 @@
 			<div class="newsletter__form">
 				<div class="newsletter__forminner" id="newsletterform">
 					<ul class="newsletter__formlistcont newsletter--lastsection" id="newsletter0">
-						<li class="newsletter__formlist">
-							<label class="newsletter__label">Name</label>
-							<input class="textbox" type="text" onkeypress="newsletter.clearError(this)" onblur="newsletter.validationCheck(this, 'name')" value="" placeholder="Enter Name" />
+						<li class="newsletter__formlist" dataIndex="0">
+							<label class="newsletter__label" for="name1">Name</label>
+							<input name="name" autocomplete="off" id="name1" class="textbox" type="text" onkeypress="newsletter.clearError(this)" onblur="newsletter.validationCheck(this, 'name')" value="" placeholder="Enter Name" />
 							<span class="newsletter__error">Please enter name</span>
 						</li>
-						<li class="newsletter__formlist">
-							<label class="newsletter__label">Surname</label>
-							<input class="textbox" type="text" onkeypress="newsletter.clearError(this)" onblur="newsletter.validationCheck(this, 'surname')" value="" placeholder="Enter surname" />
+						<li class="newsletter__formlist" dataIndex="1">
+							<label class="newsletter__label" for="surname1">Surname</label>
+							<input name="surname" autocomplete="off" id="surname1" class="textbox" type="text" onkeypress="newsletter.clearError(this)" onblur="newsletter.validationCheck(this, 'surname')" value="" placeholder="Enter surname" />
 							<span class="newsletter__error">Please enter surname</span>
 						</li>
-						<li class="newsletter__formlist">
-							<label class="newsletter__label">Email address</label>
-							<input class="textbox" type="email" onkeypress="newsletter.clearError(this)" onblur="newsletter.validationCheck(this, 'email')" value="" placeholder="Enter Email address" />
+						<li class="newsletter__formlist" dataIndex="2">
+							<label class="newsletter__label" for="emailaddress1">Email address</label>
+							<input name="emailaddress" autocomplete="off" id="emailaddress1" class="textbox" type="email" onkeypress="newsletter.clearError(this)" onblur="newsletter.validationCheck(this, 'emailaddress')" value="" placeholder="Enter Email address" />
 							<span class="newsletter__error">Please enter Email address</span>
 							<span class="newsletter__error">Please enter a valid Email address</span>
 						</li>
-						<li class="newsletter__formlist">
-							<button class="btn newsletter__btn btn__remove btn--noborder mar--top33" onclick="newsletter.remove(0)"> 
+						<li class="newsletter__formlist" dataIndex="3">
+							<button class="btn newsletter__btn btn__remove btn--noborder mar-top--33" onclick="newsletter.remove(0)"> 
 								<span class="remove__icon"></span>
 								Remove 
 							</button>
-							<button class="btn newsletter__btn btn__addfriend mar--top33" onclick="newsletter.addNewFriend(0, true)"> Add Friend </button>
+							<button class="btn newsletter__btn btn__addfriend mar-top--33" onclick="newsletter.addNewFriend(0, true)"> Add Friend </button>
 						</li>
 					</ul>
 				</div>
-				<button type="submit" onclick="submitForm()" class="btn newsletter__sendbtn btn--white">
+				<button type="submit" onclick="newsletter.submitForm()" class="btn newsletter__sendbtn btn--white">
 					Send
 					<span class="newsletter__btnrightarrow pull--none"></span>
 				</button>
